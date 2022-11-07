@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ToDo List</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <h1 class="title">ToDo List</h1>
+   </header>
+   <main>
+      <section class="section">
+         <div class="container">
+            <form class="form" action="">
+               <label class="form__label" for="">What tasks do you need to do?</label>
+               <input class="form__input" type="text" placeholder="Enter here">
+               <button class="form__btn">Add task</button>
+            </form>
+            <div class="task">
+               <h2 class="task__title">Tasks list</h2>
+               <div class="task__list"></div>
+            </div>
+            <div class="total">
+               Total:
+               <span class="total__text"></span>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>

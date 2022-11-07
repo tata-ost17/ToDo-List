@@ -1,0 +1,126 @@
+html {
+   box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+body {
+   background-color: #47315e;
+   color: #fff;
+   font-family: "Comfortaa", cursive;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.header {
+   text-align: center;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.title {
+   font-size: 4rem;
+   font-weight: 700;
+   margin-bottom: 40px;
+}
+
+.section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.container {
+   max-width: 1200px;
+   padding: 0 20px;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   max-width: 700px;
+   &__label {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+   }
+   &__input {
+      color: #fff;
+      background-color: #425570;
+      border: none;
+      border-radius: 15px;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      padding: 15px;
+      width: 100%;
+      &::placeholder {
+         color: #fff;
+      }
+   }
+   &__btn {
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      padding: 10px;
+      transition: all 0.2s ease-in;
+      width: 100%;
+      &:hover {
+         background-color: #425570;
+         color: #fff;
+      }
+   }
+}
+
+.task {
+   &__title {
+      padding-bottom: 15px;
+   }
+   &__item {
+      border-radius: 15px;
+      color: #000;
+      margin-bottom: 15px;
+      padding: 10px;
+   }
+   &__item-wrap {
+      color: #000;
+      text-align: end;
+   }
+   &__item-inner {
+      border-radius: 10px;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      width: 100%;
+   }
+}
+
+.button {
+   &__add,
+   &__del {
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 5px 10px;
+      transition: all 0.2s ease-in;
+      &:hover {
+         opacity: 0.8;
+      }
+   }
+
+   &__add {
+      background-color: #69af50;
+      margin-right: 5px;
+   }
+
+   &__del {
+      background-color: #d6697f;
+   }
+}
+
+.total {
+   font-size: 1.5rem;
+   padding-top: 15px;
+}
