@@ -1,20 +1,5 @@
-html {
-   box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-   box-sizing: inherit;
-}
-
-body {
-   background-color: #47315e;
-   color: #fff;
-   font-family: "Comfortaa", cursive;
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
-}
+@import "global";
+@import "fonts";
 
 .header {
    text-align: center;
@@ -100,6 +85,7 @@ body {
 .button {
    &__add,
    &__del {
+      border: none;
       border-radius: 15px;
       cursor: pointer;
       font-size: 20px;

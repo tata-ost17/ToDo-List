@@ -50,7 +50,7 @@ function scripts() {
 
 function styles() {
    return src([
-      'src/scss/style.scss',
+      'src/scss/**/*.scss',
       'node_modules/normalize.css/normalize.css'
    ])
       .pipe(scss({ outputStyle: 'compressed' }))
